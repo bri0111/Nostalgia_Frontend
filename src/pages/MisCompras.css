@@ -1,0 +1,159 @@
+.orders-page {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 25px;
+  color: #f5dce8;
+}
+
+.orders-return {
+  background: transparent;
+  border: none;
+  color: #d994b4;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.orders-return:hover {
+  color: #efabc9;
+  text-shadow: 0 0 8px #d994b4;
+}
+
+.orders-page h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  color: #efabc9;
+  margin-top: 30px;
+}
+
+.orders-subtitle {
+  font-style: italic;
+  color: #b995a8;
+  margin-bottom: 35px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.order-card {
+  background: #160f19;
+  border: 1px solid #9c5f7b;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(217, 148, 180, 0.08);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid #694056;
+  padding-bottom: 15px;
+}
+
+.order-header h3 {
+  font-size: 18px;
+  color: #efabc9;
+}
+
+.order-header p {
+  font-size: 12px;
+  color: #b995a8;
+  margin: 0;
+}
+
+.order-status {
+  background: #24382c;
+  color: #a7d9b6;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.order-product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #694056;
+}
+
+.order-product img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #694056;
+}
+
+.order-product-info {
+  flex: 1;
+}
+
+.order-product-info h4 {
+  font-size: 16px;
+  color: #efabc9;
+}
+
+.order-product-info p {
+  font-size: 13px;
+  color: #b995a8;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  color: #efabc9;
+  font-size: 19px;
+}
+
+.orders-empty {
+  padding: 70px 20px;
+  background: #160f19;
+  border: 1px solid #9c5f7b;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.orders-empty > span {
+  display: block;
+  font-size: 65px;
+  color: #d994b4;
+}
+
+.orders-empty h2 {
+  font-family: Georgia, serif;
+  color: #efabc9;
+  margin: 20px 0;
+}
+
+.orders-empty p {
+  color: #b995a8;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  .orders-page h1 {
+    font-size: 32px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .order-product {
+    gap: 10px;
+  }
+
+  .order-product img {
+    width: 60px;
+    height: 80px;
+  }
+}

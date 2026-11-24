@@ -1,0 +1,125 @@
+.perfil-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: radial-gradient(
+    ellipse at center,
+    #39202e,
+    #160f19,
+    #0c090e
+  );
+  color: #f5dce8;
+}
+
+.perfil-card {
+  width: 100%;
+  max-width: 500px;
+  background: #160f19;
+  border: 1px solid #9c5f7b;
+  border-radius: 12px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(217, 148, 180, 0.15);
+  animation: loginAppear 0.8s ease;
+}
+
+.perfil-return {
+  display: block;
+  text-align: left;
+  color: #d994b4;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.perfil-card h1 {
+  color: #efabc9;
+  font-size: 36px;
+  text-shadow: 0 0 15px rgba(239, 171, 201, 0.4);
+}
+
+.perfil-avatar {
+  width: 95px;
+  height: 95px;
+  margin: 30px auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9c5f7b;
+  border-radius: 50%;
+  background: #39202e;
+  color: #efabc9;
+  box-shadow: 0 0 20px rgba(239, 171, 201, 0.15);
+}
+
+.perfil-card h2 {
+  font-family: Georgia, serif;
+  color: #efabc9;
+  font-size: 30px;
+}
+
+.perfil-subtitle {
+  color: #b995a8;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.perfil-datos {
+  margin: 30px 0;
+  padding: 20px;
+  background: #0c090e;
+  border: 1px solid #694056;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.perfil-datos label {
+  color: #d994b4;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.perfil-datos p {
+  color: #f5dce8;
+  padding: 10px 0 15px;
+  border-bottom: 1px solid #694056;
+  overflow-wrap: anywhere;
+}
+
+.perfil-datos p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.perfil-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.perfil-actions a,
+.perfil-actions button {
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #9c5f7b;
+  border-radius: 5px;
+  color: #efabc9;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.perfil-actions a:hover,
+.perfil-actions button:hover {
+  background: #39202e;
+  box-shadow: 0 0 15px rgba(239, 171, 201, 0.2);
+}
+
+@media (max-width: 480px) {
+  .perfil-card {
+    padding: 20px;
+  }
+}
