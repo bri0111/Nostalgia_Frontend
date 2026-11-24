@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:8080/api";
+const API_URL = "http://localhost:8090/api";
 
 // Función general para comunicarse con Spring Boot
 export async function apiRequest(ruta, opciones = {}) {
